@@ -1,0 +1,2 @@
+Download the jquery from
+http://www.jqueryscript.net/form/jQuery-International-Telephone-Input-With-Flags-Dial-Codes.html
