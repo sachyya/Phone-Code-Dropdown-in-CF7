@@ -6,13 +6,19 @@
 </head>
 <body>
 	<h1>
-		<input type="text" id="demo" placeholder="">
+		<input type="text" name="phone" id="demo" placeholder="">
 	</h1>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="intl-tel-input-master/build/js/intlTelInput.js"></script>
 <script type="text/javascript">
+	/* display the dropdown */
 	$("#demo").intlTelInput();
+	/* insert the country code to the input field */
+	$('body').on( 'click', '.flag-dropdown li', function(){
+	  var dailData = $(this).find( '.dial-code').text();
+	  $('input[name="phone"]').val( dailData );
+	})
 </script>
 </body>
 </html>
